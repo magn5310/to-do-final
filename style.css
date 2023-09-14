@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+  body{
+    background-color: rgb(1, 1, 32);
+  
+  }
+  
+  .topMenu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  margin-top: 2rem;
+  transition: ease-in-out;
+  }
+  
+  
+  .addTaskIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #2d8fff;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 80%;
+  }
+  
+  .addTaskIcon:hover {
+    opacity: 100%;
+  }
+  
+  .form {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    top: 20%;
+    left: 5%;
+  }
+  
+  .formInputCategory {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .formText {
+    font-weight: bold;
+  }
+  
+  .formButton {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .toDoHeading {
+    color: whitesmoke;
+    background-color: rgb(32, 32, 30);
+    padding: 1rem 2rem;
+    width: 50vw;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-transform: uppercase;
+    align-self: center;
+  }
+  
+  .toDoList,
+  .doneList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+    font-family: "Just Another Hand", cursive;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(32, 32, 30);
+  }
+  
+  .taskContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    background-color: #eef4fb;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .taskContainer:last-child{
+    margin-bottom: 0;
+  }
+  
+  .taskElements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+    color: #2d8fff;
+  }
+  
+  
+  .taskElementsTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .taskElementsBottom {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .taskValues {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .taskDescription {
+    font-size: 2rem;
+    color: #a0a0a0;
+  }
+  
+  .checkBox {
+    width: 25px;
+    height: 25px;
+    background: rebeccapurple;
+  }
+  
+  .checkBox:hover {
+    cursor: pointer;
+  }
+  
+  .taskAmount {
+    font-size: 2rem;
+    color: #2d8fff;
+  }
+  
+  .delete,
+  .minus,
+  .plus {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+  .delete:hover,
+  .minus:hover,
+  .plus:hover {
+    cursor: pointer;
+  }
+  
+  .delete {
+    color: #e01a4f;
+    opacity: 80%;
+  }
+  
+  .delete:hover {
+    opacity: 100%;
+  }
+  
+  .minus:hover,
+  .plus:hover {
+    color: #2d8fff;
+  }
+  
+  
+  
+  button{
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    background-color:darkturquoise;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  
+  button:hover{
+    background-color: #2d8fff;
+    transition: 0.3s ;
+    
+  }
+  @keyframes remove1 {
+    0% {
+    }
+  
+    100% {
+      transform: translate(300%,0);
+    }
+  }
+  
+  
+  @keyframes remove2 {
+    0% {
+    }
+  
+    100% {
+      transform: translate(-300%,0);
+    }
+  }
+  
+  .remove1{
+    animation-name: remove1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .remove2{
+    animation-name: remove2;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+  }

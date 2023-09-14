@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <header></header>
+
+
+    <main>
+
+        <div class="topMenu">
+            <div class="addTaskIcon">
+                <i class="fas fa-plus"></i>
+            </div>
+
+            <div data-lastButton="" class="lastButtonPressed">
+                
+                <button data-status="notDone" class="filter notDone">To-Do</button>
+                <button data-status="done" class="filter done">Done</button>
+                <button data-status="all" class="filter all">All</button>
+            </div>
+        </div>
+
+        <div class="lists">
+            <ul class="toDoList"></ul>
+            <ul class="doneList"></ul>
+        </div>
+
+        <div class="form">
+            <p class="formText">Add Task</p>
+
+            <p>Category</p>
+            <select class="formInputCategory">
+                <option value="string">Text</option>
+                <option value="value">Amount</option>
+                <option value="stringValue">Text & Amount</option>
+            </select>
+
+            <p>Name</p>
+            <input class="formInputName" type="text">
+
+            <p class="formInputDescriptionParagraph">Description</p>
+            <input class="formInputDescription" type="text">
+
+            <p class="formInputAmountParagraph">Amount</p>
+            <input class="formInputAmount" type="number">
+
+            <button class="formButton">Add task</button>
+        </div>
+    </main>
+
+
+    <footer></footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
